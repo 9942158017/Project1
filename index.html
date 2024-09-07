@@ -1,33 +1,48 @@
-<html>
+ <html>
   <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="Mune.css">
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <link rel="stylesheet" href="Vn.css">
   </head>
-  <body class="body">
-    <header class="header">
-      <a href="#" class="logo"><span>vivi</span>yan</a>
-      <nav class="navbar">
-        <a href="#">home</a>
-        <a href="#about">About</a>
-        <a href="#Skills">Skills</a> </nav>
-        <a href="#Contact" class="contact">Contact Me</a>
-    </header>
-    <section class="home">
-    <div class="home-content">
-        <h3>Hi</h3>
-    <h1>I'm &nbsp;<span>viviyan<br></span>a web designer</h1>
-        <div class="btn-box">
-          <button class="btn">mure about me</button>
+  <body>
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+          <div class="logo">
+            <i class="fa-solid fa-a"></i>
+            <div class="logo-text">B viv<span>iyan</span>
+          </div>
+          </div>
+            <nav>
+              <div class="togglebtn">
+               <span></span>
+               <span></span>
+               <span></span>
+          </div>
+          <ul class="navlinks">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>  <li><a href="#Skills">Skill</a></li> <li><a href="#Contact">Contact</a></li>
+
+          </ul>
+          </nav>
+        </header>
+        <div class="container">
+          <div class="hero-pic">
+            <img src="vvn.jpg">
+          </div>
+          <div class="hero-text">
+            
+            <h1>I Am Vivi<span>yan B</span></h1><br><br>
+            <h5>A Web Designer</h5><br><br><br>
+             <div class="btn-box">
+        <button class="btn">More About Me</button>
+        </div>
+          </div>
         </div>
       </div>
-      <div class="img-box">
-        <img src="Vvn.jpg">
-      </div>
-    </section>
+    
+    </div>
     <section class="about" id="about">
       <div class="about-img">
-        <img src="Vvn.jpg">
+        <img src="vvn.jpg">
         </div>
         <div class="about-content"> 
         <h2 class="heading"> Ab<span>out</span></h2>
@@ -82,14 +97,23 @@
                                                        <p><b>E-mail:</b>&nbsp;viviyan2060@gmail.com</p>
                                                        <p><b>Phone:</b>&nbsp;9345816020</p>
                                                   </div>
-    <footer class="footer">
+    <div class="footer">
       
        
         <a href="https://www.linkedin.com/in/viviyan-b-0366252bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin-square'></i></a>
-        <a href="https://www.instagram.com/viviyan_07/"><i class='bx bxl-instagram-alt' ></i></a>
-        
-      </div>
-    </footer>
+        <a href="https://www.instagram.com/viviyan_07/"><i class="fa-brands fa-square-instagram"></i></a>
+    </div>
+    </div>
+    <script>
+      var togglebtn=document.querySelector(".togglebtn");
+      var nav=document.querySelector(".navlinks");
+var links=document.querySelector(".navlinks li");
+ 
+ togglebtn.addEventListener("click", function(){
+   this.classList.toggle("click");
+   nav.classList.toggle("open");
+ })
+    </script>
   </body>
 </html>
       
